@@ -1,8 +1,6 @@
 FROM alpine
 
-RUN go build -o user *.go
-
-ADD user /user
+COPY user /user
 
 ENTRYPOINT ["/user"]
 
