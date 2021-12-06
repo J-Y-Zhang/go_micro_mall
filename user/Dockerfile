@@ -1,8 +1,7 @@
-FROM alpine
-
-RUN go build -o user *.go
+FROM centos
 
 ADD user /user
 
 ENTRYPOINT ["/user"]
+
 
