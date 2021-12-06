@@ -1,6 +1,5 @@
-FROM alpine
+FROM centos
 
-COPY user /user
+ADD user /user
 
 ENTRYPOINT ["/user"]
-
