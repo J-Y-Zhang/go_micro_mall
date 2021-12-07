@@ -8,8 +8,6 @@ require (
 	go-micro.dev/v4 v4.4.0
 	golang.org/x/crypto v0.0.0-20210513164829-c07d793c2f9a
 	google.golang.org/protobuf v1.27.1
-	gorm.io/driver/mysql v1.2.1
-	gorm.io/gorm v1.22.4
 )
 
 require (

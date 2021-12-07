@@ -11,9 +11,9 @@ type CategoryDataServiceInterface interface {
     UpdateCategory(*model.Category) error
     FindCategoryByName(string) (*model.Category, error)
     FindCategoryByID(int64) (*model.Category, error)
-    FindAllCategory() ([]*model.Category, error)
-    FindCategoryByLevel(uint32) ([]*model.Category, error)
-    FindCategoryByParent(int64) ([]*model.Category, error)
+    FindAllCategory() ([]model.Category, error)
+    FindCategoryByLevel(uint32) ([]model.Category, error)
+    FindCategoryByParent(int64) ([]model.Category, error)
 }
 
 type CategoryDataService struct {
@@ -30,15 +30,15 @@ func (u CategoryDataService) FindCategoryByID(id int64) (*model.Category, error)
     return u.categoryDBManager.FindCategoryByID(id)
 }
 
-func (u CategoryDataService) FindAllCategory() ([]*model.Category, error) {
+func (u CategoryDataService) FindAllCategory() ([]model.Category, error) {
     return u.categoryDBManager.FindAll()
 }
 
-func (u CategoryDataService) FindCategoryByLevel(lv uint32) ([]*model.Category, error) {
+func (u CategoryDataService) FindCategoryByLevel(lv uint32) ([]model.Category, error) {
     return u.categoryDBManager.FindCategoryByLevel(lv)
 }
 
-func (u CategoryDataService) FindCategoryByParent(parent_id int64) ([]*model.Category, error) {
+func (u CategoryDataService) FindCategoryByParent(parent_id int64) ([]model.Category, error) {
     return u.categoryDBManager.FindCategoryByParent(parent_id)
 }
 
@@ -54,6 +54,7 @@ func (u CategoryDataService) DeleteCategory(id int64) error {
 func (u CategoryDataService) UpdateCategory(category *model.Category) error {
     return u.categoryDBManager.UpdateCategory(category)
 }
+
 
 func (u CategoryDataService) FindCategoryByName(name string) (*model.Category, error) {
     return u.categoryDBManager.FindCategoryByName(name)

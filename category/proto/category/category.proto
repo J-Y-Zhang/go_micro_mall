@@ -57,7 +57,7 @@ message CategoryResponse{
 }
 
 message FindByIDRequest{
-	string category_id = 1;
+	int64 category_id = 1;
 }
 
 message FindByLevelRequest{
