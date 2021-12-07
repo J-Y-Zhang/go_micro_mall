@@ -1,1 +1,4 @@
-# go_micro_mall
+# Micro Mall 
+  Building a mall with go-micro
+
+  building...
