@@ -7,9 +7,6 @@ import (
 	fmt "fmt"
 	proto "google.golang.org/protobuf/proto"
 	math "math"
-)
-
-import (
 	context "context"
 	api "go-micro.dev/v4/api"
 	client "go-micro.dev/v4/client"

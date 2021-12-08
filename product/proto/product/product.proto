@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+package product;
+
+option go_package = "./proto/product;product";
+
+service Product {
+	rpc AddProduct(ProductInfo) returns (AddProductResponse) {}
+	rpc FindProductByID(IDRequest) returns (ProductInfo) {}
+	rpc UpdateProduct(ProductInfo) returns (CommonResponse) {}
+	rpc DeleteProductByID(IDRequest) returns (CommonResponse) {}
+	rpc FindAllProduct(FindAllRequest) returns (ProductListResponse) {}
+}
+
+message ProductListResponse{
+	repeated ProductInfo product_list = 1;
+}
+
+message FindAllRequest{
+
+}
+
+message ProductInfo{
+	int64 id = 1;
+	int64 product_category_id = 2;
+	string product_name = 3;
+	string product_sku = 4;
+	double product_price = 5;
+	string product_description = 6;
+	repeated ProductImage product_images = 7;
+	repeated ProductSize product_sizes = 8;
+	ProductSeo product_seo = 9;
+}
+
+message ProductImage{
+	int64 id = 1;
+	string image_name = 2;
+	string image_code = 3;
+	string image_url = 4;
+}
+
+message ProductSize{
+	int64 id = 1;
+	string size_name = 2;
+	string size_code = 3;
+}
+
+message ProductSeo{
+	int64 id = 1;
+	string seo_title = 2;
+	string seo_keywords = 3;
+	string seo_description = 4;
+	string seo_code = 5;
+}
+
+message AddProductResponse{
+	int64  product_id = 1;
+}
+
+message IDRequest{
+	int64 product_id = 1;
+}
+
+message CommonResponse{
+	string msg = 1;
+}

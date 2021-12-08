@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7154548-2aff-4bc7-8d56-49c28adb5c10" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/common/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/swap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product/domain/model/product_image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product/domain/model/product_seo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product/domain/model/product_size.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/dao/category_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/dao/category_dao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/service/category_data_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/domain/service/category_data_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handler/category.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/category.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/category/category.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/category/category.pb.micro.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/category/category.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/category/category.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../user/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../user/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +41,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../product" />
   </component>
   <component name="RunManager">
     <configuration name="go build github.com/J-Y-Zhang/mall/category" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
